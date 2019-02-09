@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Hangman game</title>
+    <!--My java script-->
+    <script src="assets/javascript/game.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--Bootstrap cdn-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <!--my style sheet-->
+    <link rel="stylesheet" type="text/css" media="screen" href="../word-guess-game/assets/css/style.css"/>
+    
+</head>
+<body>
+        <div class="title text-center table-info p-1">
+                <h1>HANGMAN GAME</h1>
+            </div>
+            <hr 2px>
+    <div class="container">
+           <span></span>
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-sm-4 text-center ">
+                    <div class="win">
+                            <h3>You Win!</h3>
+                    </div>
+                    <div class="lose">
+                            <h3>Oh no! You lose.</h3>
+                    </div>
+                    
+                </div>
+
+                <div class="col-lg-5 col-md-5 col-sm-6">
+                    <h2>Press Any Key to Get Started!</h2>
+                    <h3>Wins</h3>
+                    <h3>Current Word</h3>
+                    <h3 id="currentWord"></h3>
+                    <h4>Guesses Remaining</h4>
+                    <h6 id="remainingGuesses"></h6>
+                    <h4>Letters Guessed</h4>
+                    <h3 id="guessedLetters"></h3>
+                </div>
+            </div>
+        </div>
+    
+      
+
+
+<!--Bootstrap jquery CDN-->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+</body>
+</html>
