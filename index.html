@@ -4,47 +4,50 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Hangman game</title>
-    <!--My java script-->
-    <script src="assets/javascript/game.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!--Bootstrap cdn-->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
     <!--my style sheet-->
-    <link rel="stylesheet" type="text/css" media="screen" href="../word-guess-game/assets/css/style.css"/>
-    
+    <link rel="stylesheet" href="assets/css/style.css" >
+    <!--My java script-->
+    <script src="assets/javascript/game.js"></script>
 </head>
 <body>
-        <div class="title text-center table-info p-1">
-                <h1>HANGMAN GAME</h1>
-            </div>
-            <hr 2px>
     <div class="container">
-           <span></span>
-            <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-4 text-center ">
-                    <div class="win">
-                            <h3>You Win!</h3>
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                    <div class="title">
+                            <h1>HangMan Game</h1>
+                            <br>
+                            <h2>Topic: Fruits</h2>
+                        </div>
                     </div>
-                    <div class="lose">
-                            <h3>Oh no! You lose.</h3>
-                    </div>
-                    
+        </div>
+        <div class="row">
+            <div class="offset-lg-3 offset-md-3"></div>
+                <div class="col-lg-6 col-md-6 col-sm-12 gameplay-column">
+                        <h2>Press A-Z to Make a Guess!</h2>
+                        <h4>Wins</h4>
+                        <h5 id="totalWins"></h5>
+                        <h4>Current Word</h4>
+                        <h5 id="currentWord"></h5>
+                        <h4>Guesses Remaining</h4>
+                        <h5 id="remainingGuesses"></h5>
+                        <h4>Letters Guessed</h4>
+                        <h5 id="guessedLetters"></h5>
+                        <div id="you-win"> <h1>You Win</h1> </div>
+                        <div id="you-lose"><h3>You Lose! Better luck next time!!</h3></div>
+                        <div id="pressKeyTryAgain"><h2>Press any key to try again!</h2></div>
+                        </div>
                 </div>
-
-                <div class="col-lg-5 col-md-5 col-sm-6">
-                    <h2>Press Any Key to Get Started!</h2>
-                    <h3>Wins</h3>
-                    <h3>Current Word</h3>
-                    <h3 id="currentWord"></h3>
-                    <h4>Guesses Remaining</h4>
-                    <h6 id="remainingGuesses"></h6>
-                    <h4>Letters Guessed</h4>
-                    <h3 id="guessedLetters"></h3>
-                </div>
+            <div class="offset-lg-3 offset-md-2"></div>
             </div>
         </div>
-    
-      
+    </div>
+    <script>
+        resetGame();
+        updateDisplay();
+    </script>     
 
 
 <!--Bootstrap jquery CDN-->
